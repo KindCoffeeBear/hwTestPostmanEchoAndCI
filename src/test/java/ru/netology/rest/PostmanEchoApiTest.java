@@ -14,7 +14,7 @@ public class PostmanEchoApiTest {
         // Предусловия
         given()
             .baseUri("https://postman-echo.com")
-            .body("some data") // отправляемые данные (заголовки и query можно выставлять аналогично)
+            .body("passport: 1111 111111") // отправляемые данные (заголовки и query можно выставлять аналогично)
         // Выполняемые действия
         .when()
             .post("/post")
